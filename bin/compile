@@ -59,6 +59,7 @@ function get_libvbucket(){
  
 function get_libcouchbase(){
   cd $BUILD_DIR
+  echo "New"
   mkdir -p $BUILD_DIR/vendor/couchbase
   curl "https://dl.dropboxusercontent.com/s/356o96n1vrow0t2/libcouchbase-2.1.tgz" -s -o - | tar -x -C $BUILD_DIR/vendor/couchbase -f -
 }
