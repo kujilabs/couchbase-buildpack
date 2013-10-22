@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Couchbase is going to be installed"
+exit 0
