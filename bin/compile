@@ -60,7 +60,7 @@ function get_libvbucket(){
 function get_libcouchbase(){
   cd $BUILD_DIR
   mkdir -p $BUILD_DIR/vendor/couchbase
-  curl "http://packages.couchbase.com/clients/c/libcouchbase-2.1.3_ubuntu1110_amd64.tar" -s -o - | tar -x -C $BUILD_DIR/vendor/couchbase -f -
+  curl "https://dl.dropboxusercontent.com/s/356o96n1vrow0t2/libcouchbase-2.1.tgz?token_hash=AAHPKcnJLEy0Mme1R48uzhIDTKYSikppSZTOS9lmuLHsAw&dl=1" -s -o - | tar -x -C $BUILD_DIR/vendor/couchbase -f -
 }
  
 function couchbase_update_paths(){
