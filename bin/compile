@@ -126,6 +126,8 @@ function cat_npm_debug_log() {
 }
  
 # install libcouchbase
+echo "BUILD DIR " 
+echo $BUILD_DIR;
 echo "-----> Downloading libcouchbase"
 get_libcouchbase
 echo "libcouchbase downloaded" | indent
