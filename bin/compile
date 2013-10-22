@@ -60,7 +60,7 @@ function get_libvbucket(){
 function get_libcouchbase(){
   cd $BUILD_DIR
   mkdir -p $BUILD_DIR/vendor/couchbase
-  curl "https://s3.amazonaws.com/kurobase/libcouchbase.tgz" -s -o - | tar -xz -C $BUILD_DIR/vendor/couchbase -f -
+  curl "http://packages.couchbase.com/clients/c/libcouchbase-2.1.3_ubuntu1110_amd64.tar" -s -o - | tar -x -C $BUILD_DIR/vendor/couchbase -f -
 }
  
 function couchbase_update_paths(){
